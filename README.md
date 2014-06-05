@@ -5,6 +5,8 @@ First, set you shizz up. Start here:
 
 https://developers.facebook.com/docs/
 
+Register as a dev, create a new app.
+
 Assuming you have already gained an access token, secret and user details:
 
 1) Whack into script file
