@@ -34,5 +34,3 @@ feed1.getFeed(function(feed) {
 
 	}
 });
-
-feed.update()
