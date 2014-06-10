@@ -29,7 +29,7 @@ feed1.getFeed(function(feed) {
 			
 		var postData = feed.data[i];
       
-      	//append data to feed
+      		//append data to feed
 		$('.feed').append(feed.data[i].message);
 
 	}
