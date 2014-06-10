@@ -1,20 +1,25 @@
 facebookFeed
 ============
 
-First, set you shizz up. Start here: 
+Uses mostly Vanilla Javascript, but does need jquery to call Json.
+
+To claim your user, access token and secret, register as a dev, create a new app.
 
 https://developers.facebook.com/docs/
 
-Register as a dev, create a new app.
+Assuming you have already gained an access token, secret and user details, change the configuration.
 
-Assuming you have already gained an access token, secret and user details:
+var config = {
+	// key/value
+	user: 'username',
+	access_token: 'accesstoken',
+	secret: 'yoursecret'
+};
 
-1) Whack into script file
+this is needed for the url to build correctly.
 
-2) set up vars 
+Once you have set this up, create a div and classify it as ('.feed')
 
-3) make a div, give it a class of 'feed'(or change 'feed' to w/e suits you)
+$('.feed').append(feed.data[i].message);
 
-4) prettify
-
-BOOM
+This will then append your data.
