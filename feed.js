@@ -46,20 +46,9 @@ var Facebook = function(config) {
 
 		init: function(){
 
-			self.publicMethod['alert']()
 			privateMethod.append()
 
 		}
-	}
-
-	self.publicMethod = {
-
-		alert: function(){
-
-			alert('such structure. many functions. wow');
-
-		}
-
 	}
 
 	privateMethod.init()
