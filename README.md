@@ -1,8 +1,6 @@
 facebookFeed
 ============
 
-Uses mostly Vanilla Javascript, but does need jquery to call Json.
-
 To claim your user, access token and secret, register as a dev, create a new app.
 
 https://developers.facebook.com/docs/
