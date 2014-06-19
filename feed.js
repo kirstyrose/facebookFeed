@@ -72,8 +72,8 @@ var Facebook = function(config) {
 
 //new instances
 var feed1 = new Facebook({
-	user: 'propellercomms',
-	access_token: '1418975825038822',
-	secret: 'c0383c010531c0f19a1ae48d13a00634',
+	user: 'username',
+	access_token: 'access token',
+	secret: 'secret',
 	count: 8
 });
