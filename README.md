@@ -25,4 +25,4 @@ This will then append your data.
 Updates
 =====
 Facebook Downtime taken into consideration
-Now doesn't render "empty" <li>'s
+Now doesn't render "empty" li's
