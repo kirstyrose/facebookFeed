@@ -21,3 +21,8 @@ Once you have set this up, create a div and classify it as ('.feed')
 $('.feed').append(feed.data[i].message);
 
 This will then append your data.
+
+Updates
+=====
+Facebook Downtime taken into consideration
+Now doesn't render "empty" <li>'s
