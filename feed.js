@@ -28,21 +28,36 @@ var Facebook = function(config) {
 	var privateMethod = {
 
 		append: function(){
-			
-			$.getJSON(feedUrl, function(feed){
 
-				for(var i = 0; i < settings.count; i++) {
-						
-					var postData = feed.data[i];
-			      
-			      	//append data to feed
-					$('.feed').append('<li>' + postData.message + '</li>');
+			$.ajax(
+			{
+				type: 'GET',
+				url: feedUrl,
+				success: function(data) {
+					$.getJSON(feedUrl, function(feed){
 
+						for(var i = 0; i < settings.count; i++) {
+
+							var postData = feed.data[i];
+
+							if(!postData.message) {
+								// Skips images and shared posts by not rendering the post and adding one to the count to accommodate the skipped one.
+								settings.count++
+							} else {
+					      		//append data to feed
+								$('.feed').append('<li>' + postData.message + '</li>');
+							}
+
+						}
+
+					});
+				},
+				error: function() {
+					$('.feed').append('<li>ohhh, Facebook seems to be down... Whoops!</li>');
 				}
-
 			});
 
-		}, 
+		},
 
 		init: function(){
 
