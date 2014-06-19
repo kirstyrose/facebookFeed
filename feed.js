@@ -33,14 +33,14 @@ var Facebook = function(config) {
 			{
 				type: 'GET',
 				url: feedUrl,
-				success: function(data, textStatus, XMLHttpRequest) {
+				success: function(data) {
 					$.getJSON(feedUrl, function(feed){
 
 						for(var i = 0; i < settings.count; i++) {
 
 							var postData = feed.data[i];
 
-							if(postData.message==null) {
+							if(!postData.message) {
 								// Skips images and shared posts by not rendering the post and adding one to the count to accommodate the skipped one.
 								settings.count++
 							} else {
@@ -52,7 +52,7 @@ var Facebook = function(config) {
 
 					});
 				},
-				error: function(XMLHttpRequest, textStatus, errorThrown) {
+				error: function() {
 					$('.feed').append('<li>ohhh, Facebook seems to be down... Whoops!</li>');
 				}
 			});
