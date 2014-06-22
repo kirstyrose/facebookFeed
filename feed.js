@@ -45,7 +45,7 @@ var Facebook = function(config) {
 			// return error message if request fails
 			.error(function(){
 
-				$('.feed').html('<p>Error Fetching Data');
+				$('.feed').html('<p>Error Fetching Data</p>');
 
 			})
 
@@ -65,9 +65,9 @@ var Facebook = function(config) {
 // new instances
 var feed1 = new Facebook({
 
-	user: 'propellercomms',
-	access_token: '1418975825038822',
-	secret: 'c0383c010531c0f19a1ae48d13a00634',
+	user: 'user',
+	access_token: 'access_token',
+	secret: 'secret',
 	count: 8
 
 });
