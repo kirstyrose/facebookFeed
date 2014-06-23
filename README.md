@@ -1,7 +1,7 @@
 facebookFeed
 ============
 
-To claim your user, access token and secret; register as a dev and create a new app.
+To claim your user, access token and secret, register as a dev and create a new app.
 
 https://developers.facebook.com/docs/
 
@@ -20,7 +20,7 @@ Assuming you have already gained an access token, secret and user details. Chang
 
 	});
 
-Entering your user, access token and secret will override the config information. 
+This will override the config information. 
 
 	var config = {
 		// key/value
@@ -29,7 +29,7 @@ Entering your user, access token and secret will override the config information
 		secret: 'yoursecret'
 	};
 
-If you do not enter this information, it will log an error message in the console:
+If you do not enter this information, an error message will be logged in the console:
 
 	if(settings[property] == null) console.log('Please fill in '+property);
 

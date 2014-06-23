@@ -12,7 +12,7 @@ var Facebook = function(config) {
 
 	}
 
-	// extend defaults to contfig
+	// extend defaults to config
 	var settings = $.extend(defaults, config);
 
 	// fallback for unset property
